@@ -4,8 +4,8 @@
 //
 //
 
-import AppIntents
 import SwiftUI
+import AppIntents
 
 struct OrderIntent: AppIntent {
         
@@ -18,7 +18,7 @@ struct OrderIntent: AppIntent {
     var size: Size
     
     @MainActor
-    func perform() async throws -> some IntentResult & ShowsSnippetView {
+    func perform() async throws -> some IntentResult {
         let order = OrderItem(product: product, size: size)
         try await requestConfirmation(result: .result(dialog: "こちらの注文でよろしいでしょうか？") {
             OrderConfirmationView(order: order)

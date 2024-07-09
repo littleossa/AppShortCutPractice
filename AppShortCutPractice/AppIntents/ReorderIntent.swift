@@ -15,7 +15,7 @@ struct ReorderIntent: AppIntent {
     var item: ReorderItem?
     
     @MainActor
-    func perform() async throws -> some ProvidesDialog {
+    func perform() async throws -> some IntentResult {
         let reorderItem = try await $item.requestDisambiguation(
             among: OrderDataStore.shared.fetchRecentFiveOrders().map({ ReorderItem(orderItem: $0) }),
             dialog: IntentDialog("どちらの商品を再注文しますか?")
