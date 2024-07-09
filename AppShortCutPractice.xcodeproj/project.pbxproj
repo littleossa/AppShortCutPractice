@@ -75,7 +75,7 @@
 				970DC9BE2C3440AF008A516E /* Views */,
 				970DC9BF2C3440B8008A516E /* DataStore */,
 				970DC9C02C3440C1008A516E /* Model */,
-				970DC9BA2C34403E008A516E /* AppEntiry */,
+				970DC9BA2C34403E008A516E /* AppEntity */,
 				970DC9BC2C34405C008A516E /* AppEnums */,
 				970DC9BB2C344048008A516E /* AppIntents */,
 				970DC9BD2C34406C008A516E /* AppShortcuts */,
@@ -93,12 +93,12 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		970DC9BA2C34403E008A516E /* AppEntiry */ = {
+		970DC9BA2C34403E008A516E /* AppEntity */ = {
 			isa = PBXGroup;
 			children = (
 				970DC9B22C343EB7008A516E /* ReorderItem.swift */,
 			);
-			path = AppEntiry;
+			path = AppEntity;
 			sourceTree = "<group>";
 		};
 		970DC9BB2C344048008A516E /* AppIntents */ = {
